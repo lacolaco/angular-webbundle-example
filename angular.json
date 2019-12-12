@@ -71,13 +71,15 @@
             }
           }
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+        "gen-bundle": {
+          "builder": "@lacolaco/ngx-web-bundles:generate",
           "options": {
-            "browserTarget": "angular-webbundle-example:build"
+            "browserTarget": "angular-webbundle-example:build:production",
+            "primaryURL": "https://ngx-web.bundles/"
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-webbundle-example"
 }

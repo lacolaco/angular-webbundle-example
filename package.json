@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gen-bundle": "npm run build --prod && node generate-bundle.js"
+    "gen-bundle": "ng run angular-webbundle-example:gen-bundle"
   },
   "private": true,
   "dependencies": {
@@ -29,9 +29,14 @@
     "@angular/cli": "~8.3.18",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
+    "@lacolaco/ngx-web-bundles": "^0.2.1",
+    "@types/glob": "^7.1.1",
+    "@types/mime": "^2.0.1",
     "@types/node": "~8.9.4",
+    "@types/rimraf": "^2.0.3",
     "glob": "^7.1.6",
     "mime": "^2.4.4",
+    "rimraf": "^3.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
